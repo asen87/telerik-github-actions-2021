@@ -38,5 +38,5 @@ jobs:
           echo "Deploying to our immaginary cluster
           sleep 60
           echo: "App has been deployed successfully"
-        run: "This job status is ${{ job.status }}."
+      - run: "This job status is ${{ job.status }}."
           
