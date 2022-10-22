@@ -7,12 +7,12 @@ on:
     - 'factorial.py'
     - 'lint_test.py'
     
-job:
+jobs:
   lint:
   runs-on: ubuntu-latest
   steps:
-    - name: test whcih os the runner is using 
-      run: echo "this job is now runnign on ${{ runner.os }} server hosted by Github."
+    - name: test which os the runner is using 
+      run: echo "this job is now running on ${{ runner.os }} server hosted by Github."
     - name: which branch is checked out
       run: echo "the name of the branch is ${{ github.ref }} in reposiroty ${{ github.repository }}."
     - name: check out repository code
@@ -35,9 +35,7 @@ job:
           sleep 60
           echo "Docker container built successfully"
       - name: Deploy
-          echo "Deploying to our immaginary cluster
+          echo "Deploying to our imaginary cluster
           sleep 60
           echo: "App has been deployed successfully"
         run: "This job status is ${{ job.status }}."
-          
-      
